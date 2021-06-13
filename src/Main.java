@@ -8,6 +8,7 @@ public class Main {
         System.out.println(text.indexOf('d'));
         System.out.println(text.trim());
         System.out.println(text.substring(2,5));
+        text.toCharArray()
 
 
 
