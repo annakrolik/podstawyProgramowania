@@ -28,6 +28,6 @@ public class Car {
     }
 
     public void stopEngine(String percent){
-        System.out.println("The engine has slowed down by");
+        System.out.println("The engine has slowed down by " + percent );
     }
 }
