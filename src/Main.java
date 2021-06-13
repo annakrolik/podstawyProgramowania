@@ -1,13 +1,14 @@
 public class Main {
     public static void main (String args[]){
-        String text = "Podstawy_programowania_JAVA";
-        char nazwa1 = '1';
-        char alpha = '\u03B1';
+        String text = " sunday ";
+        String text2 = new String("monday");
+        String text3 = "tuesday";
+        text.length();
+        System.out.println(text.length());
+        System.out.println(text.indexOf('d'));
+        System.out.println(text.trim());
+        System.out.println(text.substring(2,5));
 
-        System.out.println(Character.isDigit(nazwa1));
-        Character.isDigit(nazwa1);
-        Character.isDigit(nazwa1);
-        System.out.println(alpha);
 
 
     }
