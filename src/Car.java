@@ -1,7 +1,7 @@
 public class Car {
     public String model;
     public String color;
-    public String makeYear;
+    public int makeYear;
     public String fuelType;
     public int engineCapacity;
     public double tirePressure;
@@ -11,7 +11,7 @@ public class Car {
     public Car(){
 
     }
-    public Car(String manufacturer, String model, String color, String makeYear, String fuelType){
+    public Car(String model, String color, int makeYear, String fuelType){
         this.model = model;
         this.makeYear = makeYear;
         this.fuelType = fuelType;
@@ -41,6 +41,15 @@ public class Car {
 
     public void calculateMaximumSpeed(){
         System.out.println((this.engineCapacity*this.doorNumber)/this.tirePressure);
+    }
+
+    public void checkiffrom2000(){
+        if (this.makeYear > 2000){
+            System.out.println("kupuje");
+        }
+        else {
+            System.out.println("Nie kupuje");
+        }
     }
 
 }
