@@ -27,7 +27,7 @@ public class Car {
         System.out.println("The engine of " + this.model + " has started");
     }
 
-    public void stopEngine(){
+    public void stopEngine(String percent){
         System.out.println("The engine has slowed down by");
     }
 }
