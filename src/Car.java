@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Car {
     public String model;
     public String color;
