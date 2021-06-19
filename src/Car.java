@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+
+
 public class Car {
     public String model;
     public String color;
@@ -28,6 +31,11 @@ public class Car {
         this.engineCapacity = engineCapacity;
         this.tirePressure = tirePressure;
         this.doorNumber = doorNumber;
+
+    }
+    public void checkIfListIsEmpty(ArrayList<Car> tableParam){
+        System.out.println(tableParam.isEmpty());
+
 
     }
 

@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
 public class Main {
-    public static void main (String args[]){
+    public static void main (String args[]) {
 
-    Car Opel = new Car(2, 3.2, 5 );
-    Car Renault = new Car("Megane", "blue", 2000, "petrol");
-    Car Toyota = new Car ("Rav4", "white", 2010, "diesel");
-    Car Honda = new Car ("Civic", "grey", 2004, "petrol");
+        Car Opel = new Car(2, 3.2, 5);
+        Car Renault = new Car("Megane", "blue", 2000, "petrol");
+        Car Toyota = new Car("Rav4", "white", 2010, "diesel");
+        Car Honda = new Car("Civic", "grey", 2004, "petrol");
 
         ArrayList<Car> carsTable = new ArrayList<>();
         carsTable.add(Toyota);
@@ -15,6 +15,10 @@ public class Main {
         carsTable.add(Opel);
 
         carsTable.remove(0);
+
+        carsTable.get(2);
+        carsTable.clear();
+        carsTable.isEmpty();
 
 
 //    Opel.calculateMaximumSpeed();
@@ -39,6 +43,14 @@ public class Main {
 //    Kawasaki.getPrice();
 
 
+    }
+
+    public void checkIfListIsEmpty(ArrayList<Car> tableParam){
+        System.out.println(tableParam.isEmpty());
+
 
     }
+
 }
+
+
