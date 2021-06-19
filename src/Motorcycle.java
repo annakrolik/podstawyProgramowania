@@ -1,11 +1,11 @@
-public class motorcycle {
+public class Motorcycle {
     private int price;
     private String model;
     private double capacity;
     private int productionYear;
     private char size;
 
-    public motorcycle(int price, String model, double capacity, int productionYear, char size){
+    public Motorcycle(int price, String model, double capacity, int productionYear, char size){
         this.price = price;
         this.model = model;
         this.capacity = capacity;
@@ -58,4 +58,25 @@ public class motorcycle {
         System.out.println("This motorcycle's year of production is "+this.productionYear);
         System.out.println("Size of the motorcycle is "+this.size);
     }
+
+    public boolean checkIfBMW(){
+        if (this.model =="BMW"){
+            this.price +=5000;
+            return true;
+        }
+        return false;
+    }
+    public void checkIfMotorcycleIsInTheRange(){
+        if (this.price > 10000 && this.price < 20000){
+            System.out.println("Motorcycle is in the range");
+
+        } else
+        System.out.println("Motorcycle is not in the range");
+    }
+
+    public double changeCurrencyToUSD (double dollarPrice) {
+        return this.price *= dollarPrice;
+    }
 }
+
+
